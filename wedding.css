@@ -1,0 +1,18 @@
+
+html{
+    background-color: blueviolet;
+    cursor: none
+}
+
+
+.engagement{
+    height: 40%;
+}
+
+.pointed{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  height: 30px;
+  width: 30px;
+}
