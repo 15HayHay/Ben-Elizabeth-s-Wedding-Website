@@ -1,15 +1,14 @@
+#carouselExampleIndicators {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
 
-html{
-    background-color: blueviolet;
-    cursor: none
 }
 
-
-.engagement{
-    height: 40%;
-}
 
 .pointed{
+  cursor: none;
   position:absolute;
   top: 0px;
   left: 0px;
