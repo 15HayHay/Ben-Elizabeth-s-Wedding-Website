@@ -1,11 +1,14 @@
-#carouselExampleIndicators {
-  object-fit: cover
+#carousel .carousel-item img{
+  object-fit: contain;
   object-position: center;
-  height: 50vh;
+  height: 75vh;
   overflow: hidden;
 
 }
 
+.carousel-item > img {
+  width: auto;
+}
 
 .pointed{
   cursor: none;
