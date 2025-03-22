@@ -1,5 +1,5 @@
 const moveCursor = (e) => {
-  let cursorPointed = document.querySelector(".pointed");
+  let cursorPointed = document.querySelector(".cursor-pointed");
   let cursorRounded = document.querySelector(".rounded");
 
   const mouseY = e.clientY;
