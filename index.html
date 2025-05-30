@@ -2,71 +2,79 @@
 <html lang="en">
 
 <head>
-    <title>Our wedding</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.theme.min.css">
-    <link rel="stylesheet" href="wedding.css">
+  <title>Our wedding</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="wedding.css">
 
-    <div class="nav">
-        <a href="index.html">
-            <button>Home</button>
-        </a>
-        <a href="loveStory.html">
-            <button> Our love story</button>
-        </a>
-        <a href="venue.html">
-            <button>Venue</button>
-        </a>
-        <a href="honeymoon.html">
-            <button>Honeymoon fund</button>
-        </a>
-        <a href="pics.html">
-            <button>Gallery</button>
-        </a>
-    </div>
+  <div class="nav">
+    <a href="index.html">
+      <button>Home</button>
+    </a>
+    <a href="loveStory.html">
+      <button> Our love story</button>
+    </a>
+    <a href="venue.html">
+      <button>Venue</button>
+    </a>
+    <a href="honeymoon.html">
+      <button>Honeymoon fund</button>
+    </a>
+    <a href="pics.html">
+      <button>Gallery</button>
+    </a>
+  </div>
 </head>
 
 <body>
 
-    <div class="cursor-pointed">
-        <img src="857906_14cb8.gif" height="30px" width="30px" />
+  <div class="cursor-pointed">
+    <img src="857906_14cb8.gif" height="30px" width="30px" />
+  </div>
+
+  <div class="main-title-container">
+    <span class="main-title">
+      Ben &amp; Elizabeth
+    </span>
+    <span class="main-title">
+      October 11, 2025
+    </span>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </div>
+
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="Ben & Elizabeth/Birthday.jpg"></li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/Baseball.jpg"></li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/Beach.jpg"> </li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/BeardlessBen.jpg"> </li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/Christmas.jpg"> </li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/Dancing.jpg"> </li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/Engagement.jpg"></li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/cropped/Squires-Cropped.jpg"></li>
+        <li class="glide__slide"><img src="Ben & Elizabeth/cropped/Fall-Cropped.jpg"></li>
+      </ul>
     </div>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <h1 style="font-family: 'Pacifico', cursive; color: #4CAF50;">
-                Ben &amp; Elizabeth
-                <br>
-                October 11, 2025
-            </h1>
-            <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-        </div>
-    </div>
-
-    <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-                <li class="glide__slide"><img src="Ben & Elizabeth/Birthday.jpg"></li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/Baseball.jpg"></li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/Beach.jpg"> </li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/BeardlessBen.jpg"> </li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/Christmas.jpg"> </li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/Dancing.jpg"> </li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/Engagement.jpg"></li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/Squires.jpg"></li>
-                <li class="glide__slide"><img src="Ben & Elizabeth/Fall.jpg"></li>
-
-            </ul>
-        </div>
-    </div>
+  </div>
 
 
 
-    <script src="./site.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
-    <script>
-        new Glide('.glide', { autoplay: 3000, type: "slider", focusAt: "center", perView: 3 }).mount()
-    </script>
+  <script src="./site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
+  <script>
+    new Glide('.glide', {
+      type: 'slider',
+      autoplay: 3000,
+      perView: 2,
+      focusAt: "center",
+      breakpoints: {
+        1000: {
+          perView: 1
+        },
+      }
+    }).mount();
+  </script>
 </body>
 
 </html>
