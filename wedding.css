@@ -38,6 +38,10 @@ body {
   align-items: center;
 }
 
+.white {
+    color: white;
+}
+
 .text-center {
   text-align: center;
 }
@@ -49,6 +53,14 @@ body {
 
 .mw-text {
   max-width: 850px;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+.w-40 {
+    width: 160px;
 }
 
 .mb-6 {
@@ -193,7 +205,8 @@ nav {
 
   .menu-toggle {
     z-index: 10;
-    display: block;
+    display: flex;
+        gap: 8px;
   }
 
   .nav-links {
