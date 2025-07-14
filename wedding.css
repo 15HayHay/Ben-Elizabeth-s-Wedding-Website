@@ -225,4 +225,8 @@ nav {
   .nav-links.show {
     display: flex;
   }
+
+  .loveStoryTitle{
+    color:#4acf46
+  }
 }
