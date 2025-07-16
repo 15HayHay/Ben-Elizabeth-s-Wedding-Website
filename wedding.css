@@ -97,14 +97,9 @@ body {
 }
 
 .cursor-pointed {
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    transition: transform 0.05s ease-out;
-  }
-  
+  pointer-events: auto;
+  user-select: auto;
+}
 
 .glide__slide {
   display: flex;
@@ -150,10 +145,7 @@ body {
 .btn-select {
   background-color: var(--accent);
   border-radius: 0px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
+  display: inline-block;
   color: var(--text);
   font-family: Arial;
   font-size: var(--btn-font-size);
@@ -165,10 +157,7 @@ body {
 .btn {
   background-color: var(--secondary);
   border-radius: 0px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
+  display: inline-block;
   color: var(--text);
   font-family: Arial;
   font-size: var(--btn-font-size);
@@ -201,15 +190,7 @@ nav {
   border: none;
   cursor: pointer;
 }
-.loveStoryTitle{
-  display: flex;
-  justify-content: center;
-    color:#4acf46
-  }
 
-  .contributions{
-    color:#4acf46
-  }
 /* Mobile view */
 @media (max-width: 600px) {
   .mw-text {
@@ -245,5 +226,11 @@ nav {
     display: flex;
   }
 
-  
+  .loveStoryTitle{
+    color:#4acf46
+  }
+
+  .contributions{
+    color:#4acf46
+  }
 }
