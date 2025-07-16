@@ -170,6 +170,14 @@ body {
   background-color: var(--accent);
 }
 
+.contributions{
+  color: #4acf46;
+}
+
+.loveStoryTitle{
+  color:#4acf46
+}
+
 /* Nav Bar Styling */
 
 nav {
@@ -225,12 +233,5 @@ nav {
   .nav-links.show {
     display: flex;
   }
-
-  .loveStoryTitle{
-    color:#4acf46
-  }
-
-  .contributions{
-    color:#4acf46
-  }
+ 
 }
