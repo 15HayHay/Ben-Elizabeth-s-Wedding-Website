@@ -175,6 +175,7 @@ body {
 }
 
 .loveStoryTitle{
+  text-align: center;
   color:#4acf46
 }
 
@@ -197,6 +198,9 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
+}
+.date{
+  color:#4acf46
 }
 
 /* Mobile view */
