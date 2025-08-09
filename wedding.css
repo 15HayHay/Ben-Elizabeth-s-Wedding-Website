@@ -179,6 +179,17 @@ body {
   color:#4acf46
 }
 
+.rsvp-title{
+  text-align: center;
+}
+
+.rsvp-pic{
+  display:flex;
+  justify-content: center;
+  margin:auto;
+  width:25%;
+}
+
 /* Nav Bar Styling */
 
 nav {
