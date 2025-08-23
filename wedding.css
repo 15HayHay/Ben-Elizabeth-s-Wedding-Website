@@ -202,6 +202,7 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
+  margin-right: 42px;
 }
 
 .menu-toggle {
@@ -233,17 +234,28 @@ nav {
   vertical-align: middle;
   width: 100%;
 }
+
+.ya-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 /* RSVP Photo Container */
 .photo-container {
+  display: flex;
   position: relative;
-  display: inline-block;
-  width: 100%;
-  max-width: 800px;
+  width: 500px;
   margin: 40px auto;
+  
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .bride-groom-photo {
-  width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
@@ -252,8 +264,8 @@ nav {
 /* Overlay RSVP Link */
 .overlay-link {
   position: absolute;
-  top: 35%;
-  left: 55%;
+  top: 33%;
+  left: 57%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.75);
   color: #ffffff;
@@ -274,45 +286,20 @@ nav {
   transform: translate(-50%, -50%) scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+
+
+
+/* Mobile view */
+@media (max-width: 600px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
-}
-/* RSVP Page Centering */
-body.rsvp-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-body.rsvp-page .photo-container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 800px;
-}
-
-body.rsvp-page .overlay-link {
-  top: 40%;
-  padding: 8px 18px;
-  font-size: 1.2rem;
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
-}
 
-/* Mobile view */
-@media (max-width: 600px) {
   .mw-text {
     max-width: 375px;
   }
@@ -340,27 +327,10 @@ body.rsvp-page .overlay-link {
     border: 1px solid #ccc;
     padding: 0.5rem;
     z-index: 10;
+    margin: 0;
   }
 
   .nav-links.show {
     display: flex;
   }
-  .overlay-link {
-    font-size: 1.2rem;
-    padding: 12px 24px;
-    top: 55%;
-  }
-  /* Mobile adjustments for RSVP */
-@media (max-width: 600px) {
-  body.rsvp-page .overlay-link {
-    top: 45%;
-    font-size: 1rem;
-    padding: 6px 14px;
-  }
-
-  body.rsvp-page .photo-container {
-    max-width: 90%;
-  }
-}
- 
 }
